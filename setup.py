@@ -1,7 +1,8 @@
 # encoding: utf-8
 
 from setuptools import setup
-from datasift import __version__
+__version__ = "0.5.7"
+
 
 setup(
     name = "datasift",
@@ -14,6 +15,7 @@ setup(
     license = "Copyright (C) 2012 by MediaSift Ltd. All Rights Reserved. See LICENSE for the full license.",
     url = "https://github.com/datasift/datasift-python",
     packages=['datasift', 'tests'],
+    use_2to3 = True,
     tests_require=['mock>=0.8.0'],
     include_package_data = True,
     platforms='any',
